@@ -1,9 +1,36 @@
+@import "partials/common";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/main";
+@import "partials/footer";
+
+// regole generali
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: red;
+header,
+nav,
+main,
+footer{
+    @include flex;
+    color: white;
+    margin: 5px 0;
+
+    .title{
+        @include titolo;
+    }
+
+    &:hover .title{
+        text-decoration: none;
+    }
+}
+
+header,
+nav,
+footer {
+    height: 100px;
 }

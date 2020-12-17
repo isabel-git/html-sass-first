@@ -1,10 +1,58 @@
+header {
+  background-color: lightgoldenrodyellow;
+}
+
+nav {
+  background-color: lightblue;
+}
+
+main {
+  background-color: lightgreen;
+  height: calc(100vh - 325px);
+}
+
+footer {
+  background-color: lightpink;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: red;
+header,
+nav,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  margin: 5px 0;
+}
+
+header .title,
+nav .title,
+main .title,
+footer .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+
+header:hover .title,
+nav:hover .title,
+main:hover .title,
+footer:hover .title {
+  text-decoration: none;
+}
+
+header,
+nav,
+footer {
+  height: 100px;
 }
 
